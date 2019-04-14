@@ -9,7 +9,7 @@ _Test Execution Results_
 Position yourself inside the artifact containing folder, for example:
 
 [mac:...ut/artifacts/ae_crawler_jar]$ pwd                                                                         (master✱)
-**/Users/mac/exercise/ae-crawler/out/artifacts/ae_crawler_jar**
+**/Users/mac/ae-exercise/ae-crawler/out/artifacts/ae_crawler_jar**
 
 * Using Test File 1
 
