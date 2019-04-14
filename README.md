@@ -17,6 +17,7 @@ Position yourself inside the artifact containing folder, for example:
   
 target element: make-everything-ok-button  
 element path: html > body > div[0] > div[1] > div[2] > div[0] > div[0] > div[1] > a[1]  
+element contents: Make everything OK  
 total weight (score): 20.0  
 detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWordAnalyzer('title','Make-Button')), SimilarityAnalysisResult(similarity:10.0, description:tagValueContainsWordAnalyzer('Make everything OK')), SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('href','ok')), SimilarityAnalysisResult(similarity:3.0, description:attrContainsWordAnalyzer('class','btn btn-success')), SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('class','success')))  
 
@@ -26,6 +27,7 @@ detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWo
 
 target element: make-everything-ok-button  
 element path: html > body > div[0] > div[1] > div[2] > div[0] > div[0] > div[1] > div[0] > a[0]  
+element contents: Make everything OK  
 total weight (score): 16.0  
 detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWordAnalyzer('title','Make-Button')), SimilarityAnalysisResult(similarity:10.0, description:tagValueContainsWordAnalyzer('Make everything OK')), SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('href','ok')))  
 
@@ -35,6 +37,7 @@ detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWo
 
 target element: make-everything-ok-button  
 element path: html > body > div[0] > div[1] > div[2] > div[0] > div[0] > div[2] > a[0]  
+element contents: Do anything perfect  
 total weight (score): 5.0  
 detail: List(SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('href','ok')), SimilarityAnalysisResult(similarity:3.0, description:attrContainsWordAnalyzer('class','btn btn-success')), SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('class','success')))  
 
@@ -44,7 +47,8 @@ detail: List(SimilarityAnalysisResult(similarity:1.0, description:attrContainsWo
 
 target element: make-everything-ok-button  
 element path: html > body > div[0] > div[1] > div[2] > div[0] > div[0] > div[2] > a[0]  
-total weight (score): 10.0  
+element contents: Do all GREAT  
+total weight (score): 10.0    
 detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWordAnalyzer('title','Make-Button')), SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('href','ok')), SimilarityAnalysisResult(similarity:3.0, description:attrContainsWordAnalyzer('class','btn btn-success')), SimilarityAnalysisResult(similarity:1.0, description:attrContainsWordAnalyzer('class','success')))  
 
 * Notes
@@ -52,6 +56,7 @@ detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWo
 Due to technical issues with my home setup, plus time constraints, I ended up generating jar file with IntelliJ. It is
 larger than it should be.
 
+Last commit did not change the algorithm itself, only added element contents to result to make output more clear.
 
 
 

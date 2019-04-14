@@ -27,12 +27,13 @@ object MyCrawlerApp {
     override def toString = s"Unable to find results for target element id: $targetElementId"
   }
 
-  case class SuccessfulCrawlingResult (targetElementId: String, elementPath: String, totalWeight: Double, details: List[SimilarityAnalysisResult]) extends CrawlingResult {
+  case class SuccessfulCrawlingResult (targetElementId: String, elementPath: String, totalWeight: Double, elementContents: String, details: List[SimilarityAnalysisResult]) extends CrawlingResult {
     override def toString: String =
       s"""
          |target element: $targetElementId
          |element path: $elementPath
          |total weight (score): $totalWeight
+         |element contents: $elementContents
          |detail: $details
        """.stripMargin
   }
@@ -64,7 +65,7 @@ object MyCrawlerApp {
       val similarityWeight = bestResultEntry.getValue
       val evaluationDetails = analysisResults.getOrElse(bestElement, List.empty)
 
-      SuccessfulCrawlingResult(targetElementId, elementPathFor(bestElement), similarityWeight, evaluationDetails)
+      SuccessfulCrawlingResult(targetElementId, elementPathFor(bestElement), similarityWeight, bestElement.html(), evaluationDetails)
 
     } else {
       EmptyCrawlingResult(targetElementId)
