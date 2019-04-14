@@ -58,7 +58,7 @@ detail: List(SimilarityAnalysisResult(similarity:5.0, description:attrContainsWo
 Due to technical issues with my home setup, plus time constraints, I ended up generating jar file with IntelliJ. It is
 larger than it should be.
 
-Last commit did not change the algorithm itself, only added element contents to result to make output more clear.
+Most recent push did not change the algorithm itself, only added element contents to result to make output more clear.
 
 
 
