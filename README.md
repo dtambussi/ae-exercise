@@ -1,14 +1,16 @@
 **Usage Guide**
 
-**cd {local path to project}/ae-exercise/out/artifacts/ae_crawler_jar**
+**cd {local path to project}/ae-exercise/ae-crawler/out/artifacts/ae_crawler_jar**
 
 java -jar ae-crawler.jar originalFilePath sampleFilePath
 
-_Test Execution Results_
+(Target element id is an optional third argument)
+
+**Test Execution Results**
 
 Position yourself inside the artifact containing folder, for example:
 
-[mac:...ut/artifacts/ae_crawler_jar]$ pwd                                                                         (master✱)
+[mac:...ut/artifacts/ae_crawler_jar]$ pwd  
 **/Users/mac/ae-exercise/ae-crawler/out/artifacts/ae_crawler_jar**
 
 * Using Test File 1
